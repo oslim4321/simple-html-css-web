@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<style>
+      .navbar{
+            position: fixed;
+            width: 100%;
+            height: 70px;
+            display: flex;
+            background-color: #f9f9f9;
+            top: 0;
+            z-index: 999;
+            place-content: space-between;
+        }
+        .navbar img{
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        .nav{
+            position: relative;
+            display: flex;
+            float: left;
+            margin-top: 10px;
+        }
+        ul{
+            display: flex;
+            margin-right: 900px;
+            margin-left: 100px;
+        }
+        li{
+            margin-right: 40px;
+            list-style-type: none;
+            text-decoration: none;
+        }
+        li a{
+            text-decoration: none;
+            font-size: 1em;
+            color: black;
+        }
+       .nav li a:hover{
+            color:#ff8177;
+        }
+        .mobile,.mobile-exit{
+        display: none;
+        }
+        /*content*/
+        .content{
+            margin-top: 100px;
+            padding-left: 50px;
+        }
+        hr{
+            margin-left: 3px;
+            width: 120px;
+           
+        }
+
+        /*diagram*/
+        .box{
+            border-radius: 2px;
+            margin: 0 300px 0 300px;
+            box-shadow: 2px 2px 2px 2px #686767;
+            border: none;
+            height: 200px;
+            place-content: space-between;
+        }
+        .content h2{
+            font-size: 2em;
+        }
+        .content p{
+            color: grey;
+        }
+        .box-content{
+            display: flex;
+            padding: 10px 200px 0px 200px;
+        }
+        .free{
+            line-height: 15px;
+            margin-left: 30px;
+        }
+        .free h3{
+            font-size: 17px;
+            font-family: sans-serif;
+            color: #ff0844;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+        .free p {
+            height: 50px;
+        }
+        .button{
+            margin-top: 20px;
+            padding: 8px 20px;
+            background: linear-gradient(to left, #f77062 0%, #fe5196 100%);
+            border: none; 
+            border-radius: 5px;
+            cursor: pointer;
+            color: #fff;
+            position: relative;
+            transition: all 0.35s;
+            outline: none;
+            float: right;
+            margin-top: 40px;
+        }
+        .button a{
+            position: relative;
+            z-index: 2;
+            text-decoration: none;
+            color: white;
+            font-size: 1em;
+        }
+        button:hover{
+        background: linear-gradient(to left, #4f8af7 0%, #e25808 100%);
+    }
+    @media only screen and (max-width: 796px){
+            
+            .media_logo{
+                display: none;
+            }
+            .nav{
+                display: flex;
+            }
+            .nav{
+                position: absolute;
+                z-index: 999;
+                width: 50%;
+                right: 0;
+                top: 0px;
+                background: #f77062;
+                height: 100vh;
+                display: block;
+            }
+            .nav.menu-btn{
+                display: block;
+            }
+            .navbar ul{
+                margin-right: 0px;
+                display: block;
+                margin-top: 20px;    
+                float: right;
+                line-height: 20px;
+            }
+            .nav li{
+                margin-top: 20px;
+            }
+            .navbar ul a{
+                margin-right: 0px;
+                left: 0;
+                color: white;
+                display: block;
+                text-align: right;
+            }
+            .nav{
+                display: none;
+            }
+            .navbar ul a:hover{
+                color: black;
+            }
+            .mobile-exit{
+                float: right;
+                display: block;
+                cursor: pointer;
+                padding: 5px;
+                font-size: 5px;
+                transition: all 0.3s ease;
+                padding-right: 20px;
+            }
+            .mobile{
+                position: relative;
+                font-size: 30px;
+                display: block;
+                cursor: pointer;
+                padding: 30px;
+            }
+
+
+            
+        /*diagram*/
+        .box{
+            display: block;
+            float: left;
+            border-radius: 2px;
+            margin: 0 10px 0 0;
+            box-shadow: 2px 2px 2px 2px #686767;
+            border: none;
+            height: 200px;
+        }
+
+    }
+
+</style>
+
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+</head>
+<body>
+    <div class="navbar">
+        <img class="logo" src="images/yara-kawe.png" alt="">
+        <img id="mobile-ctaa" class="mobile" src="https://drive.google.com/uc?id=1bVu5JT12CiuljJnkatU9lpd3bSziaqav" alt="open navigation">
+        <div class="nav">
+            <img id="Exit-cta" class="mobile-exit" src="https://drive.google.com/uc?id=11BFv_ORi9wyNp8oD5gj2NlXJVXElPix6" alt="close-navigation">
+            <ul>
+                <li class="current"><a href="index.html">HOME</a></li>
+                <li><a href="About Us.Html">ABOUT</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="NEWS.html">NEWS</a></li>
+                <li><a href="#">TEAM</a></li>
+                <li><a href="#">OTHERS</a></li>
+            </ul>
+        </div>
+    </div>  
+
+    <div class="content">
+        <h2>Services <hr></h2>
+        <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit,consectetur.</P>
+    </div>
+
+        <div class="box">
+            <div class="box-content">
+                
+                <div class="img">
+                    <img width="300px" src="images/shine2.png" alt="">
+                </div>
+
+                <div class="free">
+                    <h3>Free</h3>
+                    <p>Lorem ipsum dolor sit amet elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <button id="main" class="button"><a href="https://www.strikingly.com/?utm_source=google-sem&utm_medium=cpc&utm_campaign=v2-s-ng-computers-search-hi-website-en&utm_content=v2a-s-ng-computers-search-hi-website-website_template-en&utm_term=tampltes&gclid=Cj0KCQiAqvaNBhDLARIsAH1Pq51ebpy_BU4mCmuYdNoV3UNOzqUxB7Ug2w0kZdSUPISFE9qOd-bPqHcaAjCJEALw_wcB">Download</a></button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const mobileBtn = document.getElementById('mobile-ctaa')
+            nav = document.querySelector('.nav')
+            mobileBtnExit = document.getElementById('Exit-cta');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+        </script>
+</body>
+</html>

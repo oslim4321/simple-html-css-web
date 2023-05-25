@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <link rel="stylesheet" href="css/main.css">
+<body>
+    <div class="navbar">
+        <div class="container">
+            <div class="contact-cta">
+                <img width="30px" src="images/Twitter_bird.svg" alt="">
+                <img width="30px" src="images/Facebook-logo.svg" alt="">
+                <img width="30px" src="images/Instagram_logo.svg" alt="">
+                <a class="gmail" href="#">
+                    <img width="30px" src="images/Gmail_Icon.svg" alt="ask@yaraikawe.com">yaraikawe
+                </a>
+                <a class="contact" href="#">
+                    <img width="30px" src="images/contact_icon.svg" alt="ask@yaraikawe.com">+234 8101863385
+                </a>
+               <a class="etails" href="#">
+                <a class="login" href="#">Login /</a>
+                <a class="get" href="#">Get Started</a></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <a href=""><img width="100px" class="logo" src="images/yara-kawe.png" alt="logo"></a>
+            <img width="30px" id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="open-navigation">
+
+           <nav>
+            <ul class="list">
+                <img id="mobile-exit" class="mobile-exit" src="images/exit.svg" alt="close-navigation">
+                <li class="current"><a href="#">home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Africa store</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+         </nav>
+        </div>
+    </div>
+    <section class="Hero">
+        <div class="container">
+            <div class="left-col">
+               <img class="illustrator" src="images/illustration.svg" width="200%" height="40%" alt="">
+                <h1>Learn Yoruba Language With Ease.</h1>
+                <p class="p">we have adopted classical and creative approaches to make learning Yoruba fun and immersive for all age categories </p>
+                <button class="button" name="Get_Started" type="button" value="button">
+                    Get Started
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="testimonial_section"> 
+        <div class="BOX">
+            <img class="book" width="70px" src="images/open-book.png" alt="book">
+            <h2 class="word">Word of the Day</h2>
+            
+        </div>
+        <div class="BOX">
+            <img class="book" width="70px" src="images/knowledge.png" alt="book">
+            <h2 class="word">Educative Games</h2>
+        </div>
+        <div class="BOX">
+            <img width="70px" src="images/diploma.png" alt="book">
+            <h2 class="word">Earn A Certificate</h2>
+        </div>
+    </section>
+    <section class="shine-section">
+        <img class="shine" src="images/shine.png" alt="">
+
+        
+        <p class="about">About Us</p>
+        <h1>Nínú Yàrá Ìkàwé</h1>
+        <p class="conten">A technologically deployed platform designed to breathe 21st-century-life on learning the Yoruba language.Nínú Yará Ìkàwé is a Yoruba virtual learning initiative with the primary aim of preserving the language and mother tongue of her native, and to promote its usage among millennials alike.</p>
+        <ul>
+            <li>Online Teaching & Learning</li>
+            <li>Certificate on Completion</li>
+            <li>You Can Learn At Your Own Pace</li>
+        </ul>
+        <a class="learn" href="#">Learn More</a>
+    </section>
+
+    <div class="container">
+        <button>
+            <form action="gmail">Gmail</form>
+            <input type="text" name="gmail">
+        </button>
+    </div>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () =>{
+            nav.classList.add('menu-btn');
+        })   
+        mobileBtnExit.addEventListener('click', () =>{
+            nav.classList.remove('menu-btn');
+        })   
+    </script>
+    
+</body>
+</html>

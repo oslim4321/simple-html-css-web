@@ -1,0 +1,380 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.navbar{
+    position: sticky;
+    margin: 0;
+    background: #f9f9f9;
+    display: flex;
+    place-content: space-between;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 55px;
+    z-index: 999;
+    top: 0;
+}
+.logo{
+    padding-left: 50px;
+    margin-top: 5px;
+    font-size: 20px;
+}
+nav{
+    position: sticky;
+    width: 400px;
+    float: right;
+    height: 70px;
+    margin-left: 100px;
+}
+.navbar ul{
+    display: flex;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    margin-right: 80px;
+   
+}
+.navbar ul li{
+    float: right;
+    margin-right: 50px;
+    list-style : none;
+    margin-top: 20px;
+}
+.navbar li a{
+    text-decoration: none;
+    font-size: 14px;;
+    color: black;
+    transition: all 0.3s;
+}
+li a:hover{
+    color:  #ff8177;
+    
+}
+.media_logo{
+    float: right;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+.navbar .mobile-menu {
+    margin-top: 20px;
+    margin-left: 700px;
+    cursor: pointer;
+    float: right
+}
+/*content*/
+html{
+    background-image: url(https://drive.google.com/uc?id=1mV7HzrJHBmWV8gt0leeq92YkTiU4veN3);
+}
+
+.content{
+    color: black;
+    text-align: center;
+    margin-top: 100px;
+    height: 400px;
+}
+.content h2{
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.content h2 span{
+    background-color: #ff8177;
+    background : linear-gradient(to top, #ff0844 0%, #ffb199 
+    100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+.content p {
+    margin-top: 10px;
+    font-size: 1em;
+    line-height: 25px;
+}
+.button{
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: linear-gradient(to left, #f77062 0%, #fe5196 100%);
+    border: none; 
+    border-radius: 5px;
+    place-content: center;
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+.button a{
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+}
+.button ::after{
+   position: absolute;
+   content: "";
+   top: 0;
+   left: 0;
+   width: 0;
+   height: 100%;
+   background: #4837ff;
+   transition: all 0.35s;
+   border-radius: 4px;
+}
+.button a :hover{
+    color:white;
+}
+.button a:hover::after{
+    width: 100%;
+}
+.mobile-menu{
+    display: none;
+}
+.mobile-exit{
+    display: none;
+}
+/*Explanation-section*/
+
+.Explanation-section{
+    background: #f9f9f9;
+    margin-top: 200px;
+}
+    .letgo{
+        margin-left: 70px;
+        padding: 30px;
+    }
+    .Explanation-section h2{
+        font-family:  Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: .1em;
+        line-height: 1.5em;
+        font-weight: 200px;
+    }
+    .Explanation-section span{
+        background : linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+    }
+    .Explanation-section p{
+        color: grey;
+        padding-top: 7px;
+        font-size: 13px;
+    }
+    .Explanation-section img{
+        float: right;
+        width: 500px;
+        margin-right: 9px;
+    }
+    .Explanation-section label{
+        display: block;
+        font-size: 1.1em;
+        margin: 10px 0 5px 0;
+    }
+     input, textarea{
+        width: 40%;
+        padding: .4em;
+        margin-bottom: 13px;
+        border: 1px solid grey;
+        box-sizing: border-box;
+    }
+    .send-message{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: block;
+        background : linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+        width: 150px;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        transition: all 0.7s;
+    }
+    .send-message:hover{
+        font-family: serif;
+        }
+   .visit{
+        text-align: center;
+        color: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    }
+    .visit a{
+        color: #ff2c80;
+    }
+    /*endingit*/
+    .grid-container{
+        display: flex;
+        grid-column-gap: 200px;
+        background: white;
+    }
+    .end{
+        margin: 50px 30px 0 70px;
+    }
+     h4{
+         font-family: sans-serif;
+         color: #ff0844;
+     }
+     .grid-container p{
+         padding: 4px;
+         text-decoration: none;
+     }
+     .grid-container a{
+         text-decoration: none;
+         font-weight: 200px;
+     }
+        .company{
+            margin-top: 50px;
+        }
+        .company h4{
+            font-family: sans-serif;
+            font-size: 1.5em;
+        }
+        .company, .cont{
+            font-size: 13px;
+            color: grey;
+        }
+        .company h5{
+            margin-top: 10px;
+            color: black;
+        }
+        .company span{
+            color: blue;
+        }
+
+@media only screen and (max-width: 1070px) {
+    .navbar ul{
+        float: right;
+        width: 20px;
+        font-size: 20px;
+        margin-right: 200px;
+    }
+    .navbar .logo{
+        margin-left: 5px;
+    }
+    .media_logo{
+        margin-right: 5px;
+    }
+}
+.mobile{
+    display: none;
+}
+.mobile-exit{
+    display: none;
+}
+
+
+@media only screen and (max-width: 796px){
+    .media_logo{
+        display: none;
+    }
+    nav{
+        display: flex;
+    }
+    nav{
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        right: 0;
+        top: 0px;
+        background: #f77062;
+        height: 50vh;
+        display: block;
+    }
+    nav.menu-btn{
+        display: block;
+    }
+    .navbar ul{
+        margin-right: 0px;
+        display: block;
+        margin-top: 20px;
+        margin-left: 1000px;
+        float: right;
+        line-height: 20px;
+        margin-right: 0px;
+    }
+    .navbar ul a{
+        margin-right: 0px;
+        left: 0;
+        color: white;
+        display: block;
+        text-align: right;
+    }
+  ul a:hover{
+        border: 1px solid;
+        padding: 5px 10px;
+        color: black;
+    }
+   .navbar .logo{
+        margin-left: 1px;
+    }
+   nav.mobile-exit{
+        float: right;
+        display: block;
+        cursor: pointer;
+        padding: 5px;
+        font-size: 5px;
+        transition: all 0.3s ease;
+    }
+    nav{
+        display: none;
+    }
+
+    .mobile{
+        font-size: 30px;
+        display: block;
+        cursor: pointer;
+        padding: 20px;
+        transition: all 0.3s ease;
+    }
+    .content{
+        margin-bottom: 100px;
+    }
+    .content,h2{
+        font-size: 30px;
+    }
+    .content,p{
+        font-size: 14px;
+    }
+    
+    .Explanation-section{
+        display: block;
+    }
+    .Explanation-section, .letgo{
+        margin: 10px 0 0 0;
+       padding: 10px 0 0 10px;
+    }
+    .Explanation-section, h2{
+        font-size: 1.1em;
+        margin-bottom: 10px;
+    }
+    .Explanation-section p{
+        font-size: 11px;
+    }
+    .Explanation-section img{
+        width: 400px;
+        margin-bottom: 50px;
+    }
+    input, textarea{
+        width: 90%;
+        padding: .4em;
+        margin-bottom: 13px;
+        border: 1px solid grey;
+        box-sizing: border-box;
+    }
+    .contact-section, label{
+        font-size: 13px;
+    }
+    .grid-container{
+        display: block;
+    }
+    .grid-container{
+        display: grid;
+        padding: 0px;
+    }
+}

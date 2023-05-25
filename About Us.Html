@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .navbar{
+            position: fixed;
+            width: 100%;
+            height: 70px;
+            display: flex;
+            background-color: #f9f9f9;
+            top: 0;
+            z-index: 999;
+            place-content: space-between;
+        }
+        .navbar img{
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        .nav{
+            position: relative;
+            display: flex;
+            float: left;
+            margin-top: 10px;
+        }
+        ul{
+            display: flex;
+            margin-right: 900px;
+            margin-left: 100px;
+        }
+        li{
+            margin-right: 40px;
+            list-style-type: none;
+            text-decoration: none;
+        }
+        li a{
+            text-decoration: none;
+            font-size: 1em;
+            color: black;
+        }
+       .nav li a:hover{
+            color:#ff8177;
+        }
+
+        .container{
+           margin: 2px 0 0 60px;
+        }
+        .container img{
+            display: flex;
+            float: right;
+            width: 500px;
+            top: -30px;
+            padding-top:20px;  
+        }
+        .container h2{
+            font-family:  Verdana, Geneva, Tahoma, sans-serif;
+            letter-spacing: 1px;
+            line-height: 1.5em;
+            font-weight: 200px;
+            font-size: 40px;
+            margin-top: 70px;
+    }
+    .container h2 span{
+        background : linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+    }
+        .container p{
+            font-size: 14px;
+            line-height: 30px;
+        }
+        .container button{
+        margin-top: 20px;
+        padding: 8px 20px;
+        background: linear-gradient(to left, #f77062 0%, #fe5196 100%);
+        border: none; 
+        border-radius: 5px;
+        place-content: center;
+        cursor: pointer;
+        color: #fff;
+        position: relative;
+        transition: all 0.35s;
+        outline: none;
+        }
+    .container button a{
+        color: white;
+        text-decoration: none;
+    }
+    .container button:hover{
+        background: linear-gradient(to left, #4f8af7 0%, #e25808 100%);
+    }
+    .mobile,.mobile-exit{
+        display: none;
+    }
+
+
+
+
+    .grid-container{
+        display: flex;
+        grid-column-gap: 200px;
+        background: white;
+    }
+    .end{
+        margin: 50px 30px 0 70px;
+    }
+     h4{
+         font-family: sans-serif;
+         color: #ff0844;
+     }
+     .grid-container p{
+         padding: 4px;
+         text-decoration: none;
+     }
+     .grid-container a{
+         text-decoration: none;
+         font-weight: 200px;
+     }
+        .company{
+            margin-top: 50px;
+        }
+        .company h4{
+            font-family: sans-serif;
+            font-size: 1.5em;
+        }
+        .company, .cont{
+            font-size: 13px;
+            color: grey;
+        }
+        .company h5{
+            margin-top: 10px;
+            color: black;
+        }
+        .company span{
+            color: blue;
+        }
+        @media only screen and (max-width: 910px){
+            .illustrator{
+                display: block;
+                margin-bottom: 30px;
+            }
+        }
+
+    @media only screen and (max-width: 796px){
+        .mobile,.mobile-exit{
+            display: none;
+        }
+        .container{
+           margin-left: 3px; 
+        }
+        .container h2{
+            font-size: 25px;
+        }
+        .container img{
+            margin: 20px 0 20px 0;
+        }
+        .container p{
+            line-height: 20px;
+            margin-left: 3px;
+        }
+            .nav{
+                position: absolute;
+                z-index: 999;
+                width: 50%;
+                right: 0;
+                top: 0px;
+                background: #f77062;
+                height: 100vh;
+                display: block;
+            }
+            .nav.menu-btn{
+                display: block;
+            }
+            .navbar ul{
+                margin-right: 0px;
+                display: block;
+                margin-top: 20px;    
+                float: right;
+                line-height: 20px;
+            }
+            .nav li{
+                margin-top: 20px;
+            }
+            .navbar ul a{
+                margin-right: 0px;
+                left: 0;
+                color: white;
+                display: block;
+                text-align: right;
+            }
+            .nav{
+                display: none;
+            }
+            .navbar ul a:hover{
+                color: black;
+            }
+            .mobile-exit{
+                float: right;
+                display: block;
+                cursor: pointer;
+                padding: 5px;
+                font-size: 5px;
+                transition: all 0.3s ease;
+            }
+            .mobile{
+                position: relative;
+                font-size: 30px;
+                display: block;
+                cursor: pointer;
+                padding: 30px;
+            }
+
+
+
+            .grid-container{
+                display: block;
+            }
+            .grid-container{
+                display: grid;
+                padding: 0px;
+            }
+
+    }
+
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="style">
+</head>
+<body>
+    <div class="navbar">
+        <img class="logo" src="images/yara-kawe.png" alt="">
+        <img id="mobile-ctaa" class="mobile" src="https://drive.google.com/uc?id=1bVu5JT12CiuljJnkatU9lpd3bSziaqav" alt="open navigation">
+        <div class="nav">
+            <img id="Exit-cta" class="mobile-exit" src="https://drive.google.com/uc?id=11BFv_ORi9wyNp8oD5gj2NlXJVXElPix6" alt="close-navigation">
+            <ul>
+                <li class="current"><a href="index.html">HOME</a></li>
+                <li><a href="About Us.Html">ABOUT</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="NEWS.html">NEWS</a></li>
+                <li><a href="#">TEAM</a></li>
+                <li><a href="#">OTHERS</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h2><span>About This Template</span> Its A<br> Bootstrap theme, template<br> to help you start your next<br> project!</h2>
+        <img class="illustrator" src="images/illustration.svg" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et<br> dolore magna aliqua. Ut enim ad minim veniam,<br> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br> Duis aute irure dolor in reprehenderit in voluptate velit esse <br>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat<br> cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br> ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem<br> accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab<br> illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia<br> voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores<br> eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,<br> consectetur, adipisci velit, sed quia non numquam eius <br></p>
+     <button id="main" class="button"><a href="https://www.strikingly.com/?utm_source=google-sem&utm_medium=cpc&utm_campaign=v2-s-ng-computers-search-hi-website-en&utm_content=v2a-s-ng-computers-search-hi-website-website_template-en&utm_term=tampltes&gclid=Cj0KCQiAqvaNBhDLARIsAH1Pq51ebpy_BU4mCmuYdNoV3UNOzqUxB7Ug2w0kZdSUPISFE9qOd-bPqHcaAjCJEALw_wcB">Download</a></button>
+   </div>
+   
+
+
+   <div class="grid-container">
+    <div class="end">
+        <h4>Site Map</h4>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="About Us.Html">About</a></p>
+        <p><a href="#">Services</a></p>
+        <p><a href="NEWS.html">News</a></p>
+        <p><a href="#">Team</a></p>
+    </div>
+    <div class="end">
+        <h4>FollowUs</h4>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="About Us.Html">About</a></p>
+        <p><a href="#">Services</a></p>
+        <p><a href="NEWS.html">News</a></p>
+        <p><a href="#">Team</a></p>
+    </div>
+          <div class="company">
+              <h4>company</h4>
+              <p class="cont">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore <br></h5>
+              <h5>Email: <span>Oslim%Example@gmail.com</span></p>
+              <h5>Phone: <span>07087121696</span></h5>
+          </div>
+
+
+   <script>
+
+    const mobileBtn = document.getElementById('mobile-ctaa')
+        nav = document.querySelector('.nav')
+        mobileBtnExit = document.getElementById('Exit-cta');
+
+    mobileBtn.addEventListener('click', () => {
+        nav.classList.add('menu-btn');
+    })
+    mobileBtnExit.addEventListener('click', () => {
+        nav.classList.remove('menu-btn');
+    })
+
+</script>
+</body>
+</html>

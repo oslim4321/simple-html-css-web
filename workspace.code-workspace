@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "D:\\Tests"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "template HTML",
+		"liveServer.settings.port": 5501
+	}
+}
